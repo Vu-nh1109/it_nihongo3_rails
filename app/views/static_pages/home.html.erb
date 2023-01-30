@@ -1,0 +1,14 @@
+
+<% if user_signed_in? %>
+    <div>
+        <%= current_user.email %>
+        <%= button_to "サインアウト", destroy_user_session_path, :method => :delete %>
+    </div>
+<% else %>
+    <div>
+        <%= link_to "サインイン", new_user_session_path %> 
+        <%= link_to "ユーザ登録", new_user_registration_path %>
+    </div>
+<% end %>
+<h1>Home Screen</h1>
+
