@@ -73,3 +73,4 @@ end
 
 gem 'webpacker', '~> 3.0'
 gem 'psych', '< 4'
+gem 'devise'
